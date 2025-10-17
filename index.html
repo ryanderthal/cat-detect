@@ -51,7 +51,7 @@
                 for(let i=0; i<predictions.length; i++){
                   det.innerHTML += `<li>${predictions[i].className}</li>`;
                 }
-                if(predictions.some( prediction => prediction.className.toLowerCase().includes("book¦"))) {
+                if(predictions.some( prediction => prediction.className.toLowerCase().includes("book"))) {
                     alert("ALERT!")
                     detection()
                   }
@@ -60,4 +60,5 @@
         }
     </script>
 </body>
+
 </html>
